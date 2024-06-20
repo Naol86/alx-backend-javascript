@@ -5,6 +5,7 @@ export default function taskBlock(trueOrFalse) {
   if (trueOrFalse) {
     const task = true; // unused variable
     const task2 = false; // unused variable
+    console.log('Inside block', task, task2);
   }
 
   return [task, task2];
