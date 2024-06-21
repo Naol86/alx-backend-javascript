@@ -13,6 +13,6 @@ export default async function handleProfileSignup(
     res.map((o) => ({
       status: o.status,
       value: o.status === 'fulfilled' ? o.value : String(o.reason),
-    })),
+    }))
   );
 }
