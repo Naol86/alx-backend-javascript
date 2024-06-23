@@ -9,7 +9,7 @@ export default class Currency {
   }
 
   set code(value) {
-    if (value instanceof String === false) {
+    if (!(value instanceof String)) {
       throw new TypeError('Code must be a string');
     }
     this._code = value;
@@ -20,7 +20,7 @@ export default class Currency {
   }
 
   set name(value) {
-    if (value instanceof String === false) {
+    if (!(value instanceof String)) {
       throw new TypeError('Name must be a string');
     }
 
